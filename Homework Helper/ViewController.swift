@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func AddHomeworkACT(sender: UIButton) {
+    @IBAction func AddHomeworkACT(_ sender: UIButton) {
 
 }
 

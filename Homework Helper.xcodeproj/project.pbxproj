@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17DF144C28AF6AD2DEABE2DB /* Pods_Homework_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793EC2C79A253375C811B13C /* Pods_Homework_Helper.framework */; };
 		EF03262F1D60EF63006E3C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03262E1D60EF63006E3C09 /* AppDelegate.swift */; };
 		EF0326311D60EF63006E3C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0326301D60EF63006E3C09 /* ViewController.swift */; };
 		EF0326341D60EF63006E3C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0326321D60EF63006E3C09 /* Main.storyboard */; };
@@ -15,9 +16,13 @@
 		EF0326411D60F3C0006E3C09 /* HomeworkTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0326401D60F3C0006E3C09 /* HomeworkTableView.swift */; };
 		EF0326431D620EE8006E3C09 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0326421D620EE8006E3C09 /* CustomCell.swift */; };
 		EF0326451D624CC8006E3C09 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0326441D624CC8006E3C09 /* File.swift */; };
+		EFC6D70D1D8B174C000AA40A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFC6D70C1D8B174C000AA40A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		793EC2C79A253375C811B13C /* Pods_Homework_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83284532E7676D472E0CF5F8 /* Pods-Homework Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.debug.xcconfig"; sourceTree = "<group>"; };
+		DC28EE3E821952B76EC1107A /* Pods-Homework Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper.release.xcconfig"; sourceTree = "<group>"; };
 		EF03262B1D60EF63006E3C09 /* Homework Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF03262E1D60EF63006E3C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF0326301D60EF63006E3C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		EF0326401D60F3C0006E3C09 /* HomeworkTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkTableView.swift; sourceTree = "<group>"; };
 		EF0326421D620EE8006E3C09 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		EF0326441D624CC8006E3C09 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		EFC6D70C1D8B174C000AA40A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DF144C28AF6AD2DEABE2DB /* Pods_Homework_Helper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F5B2EC01464E1D843433444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83284532E7676D472E0CF5F8 /* Pods-Homework Helper.debug.xcconfig */,
+				DC28EE3E821952B76EC1107A /* Pods-Homework Helper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C874DD171120D3E5A9D03CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				793EC2C79A253375C811B13C /* Pods_Homework_Helper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF0326221D60EF62006E3C09 = {
 			isa = PBXGroup;
 			children = (
 				EF03262D1D60EF63006E3C09 /* Homework Helper */,
 				EF03262C1D60EF63006E3C09 /* Products */,
+				9F5B2EC01464E1D843433444 /* Pods */,
+				C874DD171120D3E5A9D03CBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 		EF03262D1D60EF63006E3C09 /* Homework Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EFC6D70C1D8B174C000AA40A /* GoogleService-Info.plist */,
 				EF03262E1D60EF63006E3C09 /* AppDelegate.swift */,
 				EF0326301D60EF63006E3C09 /* ViewController.swift */,
 				EF0326321D60EF63006E3C09 /* Main.storyboard */,
@@ -80,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF03263D1D60EF63006E3C09 /* Build configuration list for PBXNativeTarget "Homework Helper" */;
 			buildPhases = (
+				7FA6B47B3E9E03375B1F79D9 /* [CP] Check Pods Manifest.lock */,
 				EF0326271D60EF63006E3C09 /* Sources */,
 				EF0326281D60EF63006E3C09 /* Frameworks */,
 				EF0326291D60EF63006E3C09 /* Resources */,
+				343346E22B1A37164AC1F7ED /* [CP] Embed Pods Frameworks */,
+				B03425B532B595A49E20F727 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +136,7 @@
 					EF03262A1D60EF63006E3C09 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = UJCWNQT8EJ;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -135,10 +166,59 @@
 				EF0326391D60EF63006E3C09 /* LaunchScreen.storyboard in Resources */,
 				EF0326361D60EF63006E3C09 /* Assets.xcassets in Resources */,
 				EF0326341D60EF63006E3C09 /* Main.storyboard in Resources */,
+				EFC6D70D1D8B174C000AA40A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		343346E22B1A37164AC1F7ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA6B47B3E9E03375B1F79D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B03425B532B595A49E20F727 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework Helper/Pods-Homework Helper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF0326271D60EF63006E3C09 /* Sources */ = {
@@ -260,23 +340,27 @@
 		};
 		EF03263E1D60EF63006E3C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83284532E7676D472E0CF5F8 /* Pods-Homework Helper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DavidRichardson.Homework-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		EF03263F1D60EF63006E3C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC28EE3E821952B76EC1107A /* Pods-Homework Helper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Homework Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DavidRichardson.Homework-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -299,6 +383,7 @@
 				EF03263F1D60EF63006E3C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
